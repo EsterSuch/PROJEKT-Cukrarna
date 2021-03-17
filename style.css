@@ -28,22 +28,45 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
 body {
 	margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', 'Playfair Display', serif;
   font-size: 18px;
   line-height: 1.5;
   color: #242424;
 }
 
-section{
-  padding: 80px 0;
-  margin: 0;
+h1{
+  font-size: 52px;
+  font-family: 'Playfair Display';
+}
+h2{
+  font-size: 36px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  color: #3e606b;
+}
+h3{
+  font-size: 18px;
+  font-family: 'Playfair Display';
+  color: #3e606b;
+  font-weight: 700;
 }
 
+p{
+  color:#242424;
+  font-family: 'Lora';
+}
+
+section{
+  padding: 80px 0;
+}
+
+.sirka{
+  width: 1100px;
+  margin: 0 auto;
+}
 header, footer{
   margin: 0 auto;
   padding: 30px 0;
@@ -52,7 +75,6 @@ header, footer{
 .hlavicka {
   display: flex;
   justify-content: space-between;
-  width: 1100px;
 }
 #logo{
   width: 170px;
@@ -60,6 +82,7 @@ header, footer{
 
 #menu ul{
   display: flex;
+  padding: 0;
 }
 #menu ul li{
   list-style-type: none;
@@ -72,30 +95,165 @@ header, footer{
 #menu ul li a:hover{
   background-color: #f195b2;
   border-radius: 20px;
+  color: white;
 }
 
+/*BANNER - HERO sekce*/
 
 .banner{
   background-image: url("images/cupcake.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
+  background-position: center;
 }
 
-.banner h1, p{
+.banner h1, .banner p{
   color: white;
+  margin: 0;
+  padding: 0;
+  max-width: 60%;
 }
 
+.banner h1{
+  margin-bottom: 35px;
+}
 
+.banner p{
+  font-size: 24px;
+  font-style: italic;
+}
 
+/*VÍTEJTE*/
 
+.vitejteObsah{
+  display: flex;
+  align-items: center;
+}
 
+.levaCast{
+  flex-basis: 50%;
+  margin: 0 15px 0 0;
+  max-width: 100%;
+}
 
+.pravaCast{
+  flex-basis: 50%;
+  margin: 0 0 0 15px;
+}
+.pravaCast img{
+  max-width: 100%;
+  border-radius: 5px;
+  flex-shrink: 1;
+}
+.levaCast h2{
+  margin: 20px 0 0 0;
+}
+.levaCast #prvniO{
+  padding: 15px 0 20px 0;
+  margin: 0;
+}
 
+.levaCast #druhyO{
+  padding: 0 0 40px 0;
+  margin: 0;
+}
 
+.levaCast #naseVyr{
+  background-color: #f195b2;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 5px 0;
+}
 
+.levaCast #naseVyr:hover{
+  background-color: #d2567d;
+}
 
+/*DNEŠNÍ NABÍDKA*/
 
+.dnesniNab{
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.dorty{
+  display: flex;
+}
+
+.dnesniNab h2{
+  margin: 0;
+}
+.dorty img{
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+.dort1, .dort2, .dort3, .dort4{
+  display: flex;
+  flex-direction: column;
+}
+.dortyPopis{
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+.dortyPopis h3{
+  margin: 0 0 18px 0;
+}
+.dorty p{
+  font-size: 16px;
+}
+
+.dort2, .dort3{
+  margin: 0 15px;
+}
+.dort1{
+  margin: 0 15px 0 5px;
+}
+
+.dort4{
+  margin: 0 5px 0 15px;
+}
+
+.dort1 img, .dort2 img, .dort3 img, .dort4 img{
+  border-radius: 5px 5px 0 0;
+}
+
+.dortyPopis{
+  border-radius: 0 0 5px 5px;
+}
+
+/*PŘÍSTUP*/
+
+.pristup .sirka{
+  display: flex;
+  align-items: center;
+}
+
+.leveFoto, .pravyText{
+  flex-basis: 50%;
+}
+.leveFoto{
+  margin: 0 15px 0 0;
+}
+.pravyText{
+  margin: 0 0 0 15px;
+}
+.leveFoto img{
+  border-radius: 5px;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+.pravyText h2{
+  margin: 5px 0 0 0;
+}
+
+/*PATIČKA*/
 
 .paticka{
   background-color: #303339;
@@ -103,5 +261,6 @@ header, footer{
 }
 .paticka p{
   margin: 0 auto;
-  width: 1100px;
+  text-align: center;
+  color: white;
 }
