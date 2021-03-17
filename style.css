@@ -75,6 +75,7 @@ header, footer{
 .hlavicka {
   display: flex;
   justify-content: space-between;
+  
 }
 #logo{
   width: 170px;
